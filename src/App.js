@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Mcqs from "./mcqs/mcqs";
+import Paints from "./paints/paints";
+import Splash from "./../src/splash/index";
+import Level2 from "./../src/level2/level2";
+import Level3 from "./../src/level3/index";
+import { Route, Link, BrowserRouter, Switch } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div>
+    //   <Splash />
+    //   <Mcqs />
+
+    //   <Level2 />
+
+    // </div>
+
+    <BrowserRouter>
+      <div>
+        <Switch>
+          <Route exact path="/" component={Splash} />
+          <Route exact path="/mcqs" component={Mcqs} />
+          <Route exact path="/level2" component={Level2} />
+          <Route exact path="/level3" component={Level3} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 

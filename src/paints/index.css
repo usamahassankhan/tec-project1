@@ -1,0 +1,54 @@
+.paint {
+  /* margin: auto; */
+  /* display: flex; */
+  /* z-index: 111111; */
+  justify-content: center;
+  /* background-color: red; */
+  background-image: url("./../assets/bg.jpg");
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 101.4%;
+  z-index: 11111px;
+  height: 77vh;
+}
+.canva2 {
+  display: flex;
+  position: relative;
+  height: 550px;
+  width: 500px;
+}
+.dotimg {
+  height: 200px;
+  /* width: 120px; */
+  position: absolute;
+  left: 38%;
+  top: 20%;
+}
+canvas {
+}
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 800px) {
+  .dotimg {
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .dotimg {
+    height: 200px;
+    width: 60px;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+  }
+  .paint {
+    width: 106%;
+  }
+}

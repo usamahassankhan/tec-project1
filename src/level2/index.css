@@ -1,0 +1,63 @@
+.bgmain {
+  background-image: url("./../assets/backgrounds/bg2.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* height: 100%; */
+  background-size: 100% 100%;
+}
+.imgone {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+}
+.bord {
+  border-radius: 50%;
+  border: 4px solid black;
+  background-color: white;
+  color: black;
+  /* padding: 0px 40px; */
+  padding-bottom: 10px;
+  width: 150px;
+  font-size: 60px;
+  text-align: center;
+  font-family: urdu;
+}
+.subcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+@media screen and (min-width: 600px) {
+  .bord {
+    font-size: 80px;
+  }
+}
+@media screen and (min-width: 760px) {
+  .bord {
+    font-size: 86px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .bord {
+    font-size: 80px;
+  }
+}
+.brd1:hover {
+  background-color: red;
+  color: white;
+  border: 4px solid white;
+}
+.brd2:hover {
+  background-color: blue;
+  color: white;
+  border: 4px solid white;
+}
+.brd3:hover {
+  background-color: green;
+  color: white;
+  border: 4px solid white;
+}
